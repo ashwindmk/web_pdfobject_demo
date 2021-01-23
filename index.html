@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>PDFObject</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js" integrity="sha512-mW7siBAOOJTkMl77cTke1Krn+Wz8DJrjMzlKaorrGeGecq0DPUq28KgMrX060xQQOGjcl7MSSep+/1FOprNltw==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main id="main">
+            <div id="mypdf">
+            </div>
+        </main>
+
+        <script>
+            PDFObject.embed("sample.pdf", "#mypdf", {width: "100%", height: "100vh"});
+        </script>
+    </body>
+</html>
